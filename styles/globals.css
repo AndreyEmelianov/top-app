@@ -1,0 +1,59 @@
+/* stylelint-disable color-hex-case */
+/* stylelint-disable indentation */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  /* max-width: 100vw;
+  overflow-x: hidden; */
+  background: #f5f6f8;
+  color: var(--black);
+  font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+} */
+.visualyHidden {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+:root {
+  --black: #3b434e;
+  --gray-light: #ebebeb;
+  --gray-dark: #6c7077;
+  --gray: #a4a4a4;
+  --white: white;
+  --primary: #7351f5;
+  --primary-hover: #6344df;
+  --red: #fc836d;
+  --red-light: #fea291;
+  --green: #007b48;
+  --green-light: #c8f8e4;
+  --font-family: 'Noto Sans', sans-serif;
+}
